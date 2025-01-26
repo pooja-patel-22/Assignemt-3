@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Assignemt_3.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title>MySite</title>
+    <link href="App_Themes/MyTheme/Style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: 100%; height: auto; background-color: #fff; border-bottom: 1px solid #ccc;">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 20%; text-align: left;">
+                        <img src="App_Themes/MyTheme/logo.png" alt="Logo" style="height: 50px;" />
+                    </td>
+                    <td style="width: 60%; text-align: center;">
+                        <h1>MySite</h1>
+                    </td>
+                    <td style="width: 20%; text-align: right;">
+                        <div>NAME: abc</div>
+                        <div>EMAIL: abc@gmail.com</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: flex;">
+            <div style="width: 20%; background-color: #e8e8e8; padding: 10px;">
+                <ul>
+                    <li><a href="Resume.aspx">Resume</a></li>
+                    <li><a href="PhotoGallery.aspx">Photo Gallery</a></li>
+                    <li><a href="ContactUs.aspx">Contact Us</a></li>
+                </ul>
+            </div>
+         <div style="width: 80%; padding: 10px;">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div style="width: 100%; text-align: center; background-color: #f1f1f1; padding: 10px; border-top: 1px solid #ccc;">
+            &copy; 2012: ALL RIGHTS ARE RESERVED
+        </div>
+    </form>
+</body>
+</html>
